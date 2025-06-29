@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+/* Estilos globais para botões */
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Estilos globais para inputs */
+input, textarea, select {
+    font-family: inherit;
+    outline: none;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #667eea;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a6fd8;
+}
+
+/* Animações globais */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Classes utilitárias */
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+.slide-in {
+    animation: slideIn 0.5s ease;
+}
+
+/* Responsividade global */
+@media (max-width: 768px) {
+    .main-content {
+        padding-top: 0.5rem;
+    }
+} 
