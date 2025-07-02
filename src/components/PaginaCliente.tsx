@@ -21,4 +21,4 @@ export function PaginaCliente({ onVoltar }: PaginaClienteProps) {
             </div>
         </CarrinhoProvider>
     );
-} 
+}

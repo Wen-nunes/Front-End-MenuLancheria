@@ -9,6 +9,7 @@ interface FormularioProdutoProps {
     produto?: Produto | null;
 }
 
+
 export function FormularioProduto({onClose, produto}: FormularioProdutoProps) {
     const queryClient = useQueryClient()
     const isEditing = !!produto;

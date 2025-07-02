@@ -8,6 +8,7 @@ interface ModalProps {
     children: React.ReactNode;  // Elementos filhos que serão renderizados dentro do modal
 }
 
+
 // Componente funcional Modal
 export function Modal({ isOpen, onClose, children }: ModalProps) {
     // Se o modal não estiver aberto (isOpen === false), não renderiza nada (retorna null).

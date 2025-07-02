@@ -97,10 +97,11 @@ export function Navbar() {
         return statusMap[status as keyof typeof statusMap] || status;
     };
 
+
     return (
         <nav className="navbar">
             <div className="navbar-brand">
-                <img src="public/logo.png" alt="Logo Wenburguer"/>
+                <img src="public/logoo.png" alt="Logo Wenburguer"/>
             </div>
             
             <div className="navbar-actions">

@@ -1,12 +1,15 @@
 .menu-inicial {
     min-height: 100vh;
-    background-image: url('wenburger_logo_tile.png');
+    background-image: url('wenburger_logo_tilee.png');
     background-repeat: repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
 }
+
+
+
 
 .menu-container {
     background: linear-gradient(120deg, black 0%, #764ba2 100%);
@@ -19,19 +22,6 @@
 
 .menu-header {
     margin-bottom: 3rem;
-}
-
-.bree-serif-regular {
-    font-family: "Bree Serif", serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.menu-titulo {
-    font-family:"Bree Serif", Serif;
-    color: white;
-    margin-bottom: 1rem;
-    font-weight: bold;
 }
 
 .menu-subtitulo {

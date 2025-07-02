@@ -22,7 +22,7 @@ export function PaginaAdmin({ onVoltar }: PaginaAdminProps) {
         }
     });
 
-    const { data: pedidos, isLoading: loadingPedidos, error: pedidosError, refetch: refetchPedidos } = useQuery({
+    const { data: pedidos, isLoading: loadingPedidos, refetch: refetchPedidos } = useQuery({
         queryKey: ['admin-pedidos'],
         queryFn: async () => {
             const response = await adminApi.listarTodosPedidos();
@@ -68,51 +68,10 @@ export function PaginaAdmin({ onVoltar }: PaginaAdminProps) {
     const handleImageError = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
         event.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjVGNUY1Ii8+CjxwYXRoIGQ9Ik0xMDAgNzBDMTE2LjU2OSA3MCAxMzAgODMuNDMxIDEzMCAxMDBDMTMwIDExNi41NjkgMTE2LjU2OSAxMzAgMTAwIDEzMEM4My40MzEgMTMwIDcwIDExNi41NjkgNzAgMTAwQzcwIDgzLjQzMSA4My40MzEgNzAgMTAwIDcwWiIgZmlsbD0iI0NDQ0NDQyIvPgo8cGF0aCBkPSJNMTAwIDE0MEMxMTYuNTY5IDE0MCAxMzAgMTUzLjQzMSAxMzAgMTcwQzEzMCAxODYuNTY5IDExNi41NjkgMjAwIDEwMCAyMDBDODMuNDMxIDIwMCA3MCAxODYuNTY5IDcwIDE3MEM3MCAxNTMuNDMxIDgzLjQzMSAxNDAgMTAwIDE0MFoiIGZpbGw9IiNDQ0NDQ0MiLz4KPC9zdmc+';
     };
-
-    const criarProdutosTeste = async () => {
-        const produtosTeste = [
-            {
-                nome: "Pizza Margherita",
-                descricao: "Pizza tradicional com molho de tomate, mussarela e manjericão",
-                categoria: "Pizzas",
-                preco: 25.90,
-                imagem: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=400&h=300&fit=crop",
-                ativo: true
-            },
-            {
-                nome: "Hambúrguer Clássico",
-                descricao: "Hambúrguer com carne, alface, tomate e queijo",
-                categoria: "Hambúrgueres",
-                preco: 18.50,
-                imagem: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
-                ativo: true
-            },
-            {
-                nome: "Batata Frita",
-                descricao: "Porção de batatas fritas crocantes",
-                categoria: "Acompanhamentos",
-                preco: 12.00,
-                imagem: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop",
-                ativo: true
-            }
-        ];
-
-        try {
-            for (const produto of produtosTeste) {
-                await adminApi.criarProduto(produto);
-            }
-            alert('Produtos de teste criados com sucesso!');
-            refetchProdutos();
-        } catch (error) {
-            console.error('Erro ao criar produtos de teste:', error);
-            alert('Erro ao criar produtos de teste');
-        }
-    };
-
     return (
         <div className="pagina-admin">
             <div className="admin-header">
-                <img src="public/logo.png" alt="Logo Wenburguer"/>
+                <img src="public/logoo.png" alt="Logo Wenburguer"/>
                 <button 
                     className="voltar-button"
                     onClick={onVoltar}
@@ -120,6 +79,7 @@ export function PaginaAdmin({ onVoltar }: PaginaAdminProps) {
                     ⬅️ Voltar ao Menu
                 </button>
             </div>
+
 
             <div className="admin-tabs">
                 <button 

@@ -5,6 +5,7 @@ interface MenuInicialProps {
     onSelecionarModo: (modo: 'cliente' | 'admin') => void;
 }
 
+
 export function MenuInicial({ onSelecionarModo }: MenuInicialProps) {
     const [isAnimating, setIsAnimating] = useState(false);
 
@@ -19,7 +20,7 @@ export function MenuInicial({ onSelecionarModo }: MenuInicialProps) {
         <div className="menu-inicial">
             <div className="menu-container">
                 <div className="menu-header">
-                    <img src="public/logo.png" alt="Logo Wenburguer"/>
+                    <img src="public/logoo.png" alt="Logo Wenburguer"/>
                     <p className="menu-subtitulo">Escolha como deseja acessar o sistema</p>
                 </div>
                 
