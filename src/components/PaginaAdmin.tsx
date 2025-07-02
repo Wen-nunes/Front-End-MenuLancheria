@@ -112,7 +112,7 @@ export function PaginaAdmin({ onVoltar }: PaginaAdminProps) {
     return (
         <div className="pagina-admin">
             <div className="admin-header">
-                <h1>⚙️ Painel Administrativo</h1>
+                <img src="public/logo.png" alt="Logo Wenburguer"/>
                 <button 
                     className="voltar-button"
                     onClick={onVoltar}

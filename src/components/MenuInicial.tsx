@@ -19,7 +19,7 @@ export function MenuInicial({ onSelecionarModo }: MenuInicialProps) {
         <div className="menu-inicial">
             <div className="menu-container">
                 <div className="menu-header">
-                    <h1 className="menu-titulo">🍕 Menu Digital</h1>
+                    <img src="public/logo.png" alt="Logo Wenburguer"/>
                     <p className="menu-subtitulo">Escolha como deseja acessar o sistema</p>
                 </div>
                 
@@ -61,9 +61,7 @@ export function MenuInicial({ onSelecionarModo }: MenuInicialProps) {
                     </div>
                 </div>
                 
-                <div className="menu-footer">
-                    <p>Sistema de Menu Digital - Desenvolvido com React + Spring Boot</p>
-                </div>
+
             </div>
         </div>
     );

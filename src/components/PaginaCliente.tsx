@@ -14,7 +14,7 @@ export function PaginaCliente({ onVoltar }: PaginaClienteProps) {
                 <Navbar />
                 <main className="cliente-content">
                     <button className="voltar-menu-btn" onClick={onVoltar}>
-                        ⬅️ Voltar ao Menu
+                        Voltar ao Menu
                     </button>
                     <ProdutoLista />
                 </main>

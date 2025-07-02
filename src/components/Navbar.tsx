@@ -100,7 +100,7 @@ export function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-brand">
-                <h1>🍕 Menu Digital</h1>
+                <img src="public/logo.png" alt="Logo Wenburguer"/>
             </div>
             
             <div className="navbar-actions">

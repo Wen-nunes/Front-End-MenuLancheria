@@ -1,6 +1,7 @@
 .menu-inicial {
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: url('wenburger_logo_tile.png');
+    background-repeat: repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,22 +9,27 @@
 }
 
 .menu-container {
-    background: white;
+    background: linear-gradient(120deg, black 0%, #764ba2 100%);
     border-radius: 20px;
     padding: 3rem;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
     max-width: 900px;
     width: 100%;
-    text-align: center;
+    text-align: center;justify-content: center;
 }
 
 .menu-header {
     margin-bottom: 3rem;
 }
 
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 .menu-titulo {
-    font-size: 3rem;
-    color: #333;
+    font-family:"Bree Serif", Serif;
+    color: white;
     margin-bottom: 1rem;
     font-weight: bold;
 }
@@ -42,7 +48,7 @@
 }
 
 .menu-opcao {
-    background: #f8f9fa;
+    background: transparent;
     border-radius: 16px;
     padding: 2rem;
     cursor: pointer;
@@ -86,7 +92,7 @@
 }
 
 .menu-opcao h2 {
-    color: #333;
+    color: #1a0d19;
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
@@ -106,7 +112,7 @@
 }
 
 .menu-opcao li {
-    color: #555;
+    color: white;
     margin-bottom: 0.5rem;
     padding-left: 1.5rem;
     position: relative;
